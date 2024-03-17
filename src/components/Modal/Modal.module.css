@@ -24,6 +24,7 @@
     z-index: 1050;
 }
 
+
 .modal img {
     width: 100%;
     height: auto;
@@ -39,8 +40,8 @@
     height: 30px;
     border: none;
     border-radius: 50%;
-    background-color: #e66f07;
-    color: #1b0505;
+    background-color: #ff85a2;
+    color: #fff;
     font-size: 16px;
     display: flex;
     justify-content: center;

@@ -2,7 +2,8 @@
 .searchbar {
     background-color: #f0f8ff;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-color:rgb(132, 255, 0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -12,6 +13,10 @@
     border: 2px solid #edb42f;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.form:focus {
+    border: 2px solid #edb42f;
 }
 
 .input {
@@ -24,12 +29,10 @@
     width: 50%;
 }
 
-
 .button {
     padding: 10px 15px;
     border: none;
-    background-color: #cbad05;
-    /* Soft pink */
+    background-color: #dae10c;
     color: #311c1c;
     cursor: pointer;
     transition: background-color 0.3s;

@@ -1,4 +1,3 @@
-// src/components/Modal/Modal.js
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Modal.module.css'; // Make sure to create a corresponding CSS module
@@ -10,13 +9,12 @@ class Modal extends Component {
     onClose: PropTypes.func.isRequired,
   };
 
-  componentDidMount() {
-    window.addEventListener('keydown', this.handleKeyDown);
+  handleBackdropClick = e => {
+  // Check if the click target is the overlay (background) element or the close button
+  if (e.target.classList.contains(styles.overlay) || e.target.classList.contains(styles.closeButton)) {
+    this.props.onClose();
   }
-
-  componentWillUnmount() {
-    window.removeEventListener('keydown', this.handleKeyDown);
-  }
+};
 
   handleKeyDown = e => {
     if (e.code === 'Escape') {
@@ -29,6 +27,7 @@ class Modal extends Component {
     return (
       <div className={styles.overlay} onClick={this.handleBackdropClick}>
         <div className={styles.modal}>
+          <button className={styles.closeButton} onClick={this.props.onClose}>X</button>
           <img src={image} alt={tags} />
         </div>
       </div>

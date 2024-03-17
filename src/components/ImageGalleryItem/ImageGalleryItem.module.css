@@ -14,7 +14,7 @@
     width: auto;
     height: auto;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
     border: 3px solid #f0f8ff;
     overflow: hidden;
 }
