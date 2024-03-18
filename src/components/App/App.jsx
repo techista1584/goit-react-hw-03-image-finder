@@ -4,7 +4,7 @@ import { fetchImages } from 'API';
 import { Searchbar } from '../Searchbar/Searchbar';
 import { Gallery } from '../ImageGallery/ImageGallery';
 import { Pagination } from '../LoadMore/LoadMore';
-import { Wrapper } from './App.styled'
+import { Wrapper } from '../App/App.styled'
 import { Loader } from '../Loader/Loader'
 import {notifyInfo, notifyInputQuerry, success} from '../Notify/notify'
 
