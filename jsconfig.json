@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "types": [
-      "trusted-types"
-    ]
+    "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
